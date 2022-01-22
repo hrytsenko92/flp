@@ -1,4 +1,9 @@
 * {
   box-sizing: border-box; }
 
+body {
+  max-height: 2158px;
+  max-width: 1440px;
+  background-color: lightblue; }
+
 /*# sourceMappingURL=style.css.map */
