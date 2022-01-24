@@ -119,3 +119,24 @@ header {
         align-self: center;
     }
 }
+
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 50px 3fr 1fr;
+    grid-template-rows: minmax(650px, auto);
+    .lsi_sec1 {
+        grid-column: 2/3;
+        background-color: lightcyan;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: start;
+        h1 {
+            align-self: end;
+        }
+    }
+    .rsi_sec1 {
+        grid-column: 4/5;
+        background-color: lightgreen;
+    }
+}
