@@ -109,11 +109,10 @@ header {
 
 .section1 {
   display: grid;
-  grid-template-columns: 1fr 3fr 50px 3fr 1fr;
-  grid-template-rows: minmax(650px, auto); }
+  grid-template-columns: 1fr 3fr 3em 3fr 1fr;
+  grid-template-rows: minmax(600px, auto); }
   .section1 .lsi_sec1 {
     grid-column: 2/3;
-    background-color: lightcyan;
     display: grid;
     grid-template-rows: 3fr 1fr 1fr;
     grid-template-columns: 1fr;
@@ -156,6 +155,9 @@ header {
       text-decoration: none; }
   .section1 .rsi_sec1 {
     grid-column: 4/5;
-    background-color: lightgreen; }
+    grid-row: 1/2;
+    justify-self: stretch;
+    background: url(/img/pana.svg) no-repeat;
+    margin-top: 11em; }
 
 /*# sourceMappingURL=style.css.map */
