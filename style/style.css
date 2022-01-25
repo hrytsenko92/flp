@@ -122,7 +122,7 @@ header {
       font-family: Roboto;
       font-style: normal;
       font-weight: bold;
-      font-size: 48px;
+      font-size: 3em;
       line-height: 133.69%;
       color: #EE4248;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
@@ -133,7 +133,7 @@ header {
       font-family: Roboto;
       font-style: normal;
       font-weight: normal;
-      font-size: 20px;
+      font-size: 1.25em;
       line-height: 29px;
       color: #30444E; }
     .section1 .lsi_sec1 .sec1_btn {
@@ -159,5 +159,37 @@ header {
     justify-self: center;
     align-self: center;
     margin-top: 8em; }
+    .section1 .rsi_sec1 .rsi_sec1_img {
+      background: url(/img/pana.svg) no-repeat;
+      width: 35.1em;
+      height: 23.8em; }
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2em 4fr 1fr;
+  grid-template-rows: minmax(500px, auto);
+  background-color: #F7F7F7; }
+  .section2 .lsi_sec2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center; }
+    .section2 .lsi_sec2 .lsi_sec2_img {
+      background: url(../img/pana2.svg) no-repeat;
+      width: 28.3em;
+      height: 29.5em; }
+  .section2 .rsi_sec2 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center; }
+    .section2 .rsi_sec2 .rsi_sec2 > h2 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2em;
+      line-height: 133.69%; }
+    .section2 .rsi_sec2 .rsi_sec2_span {
+      color: #EE4248; }
 
 /*# sourceMappingURL=style.css.map */
