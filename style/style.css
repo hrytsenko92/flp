@@ -313,5 +313,7 @@ header {
   .section4 .sec4_item2 {
     grid-column: 3/4;
     grid-row: 1/2; }
+  .section4 .sec4_span {
+    margin-top: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
