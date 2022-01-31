@@ -103,7 +103,7 @@ header {
     }
 }
 .arr::after {
-    content: url(/img2/arrow/chevron_down.png);
+    content: url(./img/chevron_down3.svg);
     display: inline-block;
     margin-left: 5px;
     width: 13px;
@@ -184,11 +184,11 @@ header {
             width: 100%;
             height: 100%;
         }
-        /*.rsi_sec1_img {
-            background: url(/img/pana.svg) no-repeat ;
+        .rsi_sec1_img {
+            background: url(/img/Group7.svg) no-repeat ;
             width: 100%;
             height: 100%;
-        }*/
+        }
         
 
     }
