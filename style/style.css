@@ -109,7 +109,7 @@ header {
 
 .section1 {
   display: grid;
-  grid-template-columns: 1fr 4fr 2em 4fr 1fr;
+  grid-template-columns: 1fr 4fr 0.5fr 4fr 1fr;
   grid-template-rows: minmax(600px, auto); }
   .section1 .lsi_sec1 {
     grid-column: 2/3;
@@ -159,14 +159,17 @@ header {
     justify-self: center;
     align-self: center;
     margin-top: 8em; }
-    .section1 .rsi_sec1 .rsi_sec1_img {
-      background: url(/img/pana.svg) no-repeat;
-      width: 35.1em;
-      height: 23.8em; }
+  .section1 .rsi_sec1_img {
+    display: block;
+    box-sizing: content-box;
+    background: url(/img/pana.svg) no-repeat;
+    width: 563px;
+    height: 382px;
+    background-size: 563px 382px; }
 
 .section2 {
   display: grid;
-  grid-template-columns: 1fr 4fr 2em 4fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
   grid-template-rows: minmax(500px, auto);
   background-color: #F6F6F6; }
   .section2 .lsi_sec2 {
@@ -175,9 +178,9 @@ header {
     justify-self: center;
     align-self: center; }
     .section2 .lsi_sec2 .lsi_sec2_img {
-      background: url(../img/pana2.svg) no-repeat;
-      width: 28.3em;
-      height: 29.5em; }
+      background: url(/img/pana2.svg) no-repeat;
+      width: 543px;
+      height: 430px; }
   .section2 .rsi_sec2 {
     grid-column: 4/5;
     grid-row: 1/2;
@@ -337,7 +340,7 @@ header {
 footer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(64px, 1fr);
+  grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
   background-color: #EE4248; }
