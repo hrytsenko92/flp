@@ -103,7 +103,7 @@ header {
     }
 }
 .arr::after {
-    content: url(/img/chevron_down.svg);
+    content: url("#down");
     display: inline-block;
     margin-left: 5px;
     width: 13px;
@@ -183,7 +183,7 @@ header {
         .rsi_sec1_img {
             display: block;
             box-sizing: content-box;
-            background: url(/img/pana.svg) no-repeat ;
+            background: url(/img/q1.svg) no-repeat ;
             width: 563px;
             height: 382px;
             background-size: 563px 382px;
