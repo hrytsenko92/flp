@@ -6,10 +6,8 @@
 }
 @font-face {
     font-family: "roboto";
-    src: url(/fonts/Roboto/Roboto-Medium.ttf);
 }
 body {
-    max-height: 2158px;
     max-width: 1440px;
     background-color:white;
 }
@@ -103,7 +101,8 @@ header {
     }
 }
 .arr::after {
-    content: url("#down");
+    content: "";
+    background-image: url(../img/chevron_down.svg);
     display: inline-block;
     margin-left: 5px;
     width: 13px;
@@ -181,12 +180,8 @@ header {
         margin-top: 8em;
         }
         .rsi_sec1_img {
-            display: block;
-            box-sizing: content-box;
             background: url(/img/q1.svg) no-repeat ;
-            width: 563px;
-            height: 382px;
-            background-size: 563px 382px;
+            max-width: 100%;
         }
     }
 .section2 {
@@ -201,8 +196,8 @@ header {
         align-self:center;
         .lsi_sec2_img {
             background: url(/img/pana2.svg) no-repeat;
-            width: 543px;
-            height: 430px;
+            max-width: 543px;
+            max-height: 430px;
         }
     }
     .rsi_sec2 {
@@ -395,5 +390,6 @@ footer {
     grid-template-rows: 1fr;
     justify-items: center;
     align-items:center;
+    max-height: 4rem;
     background-color: #EE4248;
 }
