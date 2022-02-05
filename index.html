@@ -1,118 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-   <header>
-       <div class="logo">
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p class="logo_span">
+          <span class="logo_span_1">D</span>
+          <span class="logo_span_2">S</span>
+          <span class="logo_span_3">I</span>
+        </p>
+        <p class="l1">DWIDASA</p>
+        <p class="l2">SAMSARA</p>
+        <p class="l3">INDONESIA</p>
+      </div>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Services</a></li>
+          <li><a class="menu__item" href="#">Product</a></li>
+          <li><a class="menu__item" href="#">Technology</a></li>
+          <li><a class="menu__item arr" href="#">About</a></li>
+          <li><a class="menu__item arr" href="#">Client</a></li>
+          <li><a class="menu__item" href="#">Partner</a></li>
+        </ul>
+      </div>
+
+      <ul class="nav_btn">
+        <li class="nav_btn_1">
+          <a href="#"><img src="./img/Union.svg" alt="" /></a>
+        </li>
+        <li class="nav_btn_2">
+          <a href="#"><img src="./img/mail.svg" alt="" /></a>
+        </li>
+        <li class="nav_btn_3">
+          <a href="#"><img src="./img/shuffle.svg" alt="" /></a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="section1">
+        <div class="lsi_sec1">
+          <h1>
+            <span>Making the most of the ever-growing</span> Information
+            Technology
+          </h1>
+          <p class="sec1_p">
+            Managed by a team of professional experts with extensive experience
+            and impressive track records
+          </p>
+          <a href="" class="sec1_btn">Read More</a>
+        </div>
+        <div class="rsi_sec1">
+          <div class="rsi_sec1_img">
+            <img src="./img/pana.svg" alt="pana_err" />
+          </div>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="lsi_sec2">
+          <div class="lsi_sec2_img"><img src="./img/pana2.svg" alt="" /></div>
+        </div>
+        <div class="rsi_sec2">
+          <h2>
+            <span class="rsi_sec2_span">Welcome to</span> Dwidasa Samsara
+            Indonesia (DSI)
+          </h2>
+          <p class="rsi_sec2_p1">
+            Dwidasa Samsara Indonesia (DSI) was firstly established in 2010 by
+            the founders, who each of them has a common end objective to
+            innovate new creations by making the most of the ever-growing
+            information technology through <span>DSI</span>’s distinct front-end
+            based application concept.
+          </p>
+          <p class="rsi_sec2_p2">
+            Managed by a team of professional experts with extensive experience
+            and impressive track records, <span>DSI</span> believes that
+            continuous improvements and innovations assure your business to run
+            effectively and efficiently.
+          </p>
+        </div>
+      </div>
+      <div class="section3">
+        <h3 class="sec3_h3">Product and Service</h3>
+        <div class="sec3_item1">
+          <div class="ico_sec3_1">
+            <img src="./img/sec3_img1.svg" alt="img1" />
+          </div>
+          <h3>Our Product</h3>
+          <p>
+            Our product is made on the base of our team’s careful research and
+            analyses, ranging from internet based application.
+          </p>
+          <a class="sec3_a" href="#">Read More</a>
+        </div>
+        <div class="sec3_item2">
+          <div class="ico_sec3_2">
+            <img src="./img/sec3_img2.svg" alt="img2" />
+          </div>
+          <h3>Our Service</h3>
+          <p>
+            DSI’s shared service solutions focus on the front-end based software
+            development, designed specifically for the banking and financial
+            sectors.
+          </p>
+          <a class="sec3_a" href="#">Read More</a>
+        </div>
+        <div class="sec3_item3">
+          <div class="ico_sec3_3">
+            <img src="./img/sec3_img3.svg" alt="img3" />
+          </div>
+          <h3>Our Technology</h3>
+          <p>
+            First JAVA, runs on more than 850 million personal computers
+            worldwide, and on billions of devices worldwide, including mobile
+            and TV devices.
+          </p>
+          <a class="sec3_a" href="#">Read More</a>
+        </div>
+      </div>
+      <div class="section4">
+        <div class="sec4_item1">
+          <div class="logo">
             <p class="logo_span">
-                <span class="logo_span_1">D</span>
-                <span class="logo_span_2">S</span>
-                <span class="logo_span_3">I</span>
+              <span class="logo_span_1">D</span>
+              <span class="logo_span_2">S</span>
+              <span class="logo_span_3">I</span>
             </p>
             <p class="l1">DWIDASA</p>
             <p class="l2">SAMSARA</p>
             <p class="l3">INDONESIA</p>
+          </div>
+          <h4>PT Dwidasa Samsara Indonesia</h4>
+          <span>Ruko Jalur Sutera 29A No. 53</span>
+          <span>Alam Sutera Serpong, Tangerang 15323 </span>
         </div>
-        <div class="hamburger-menu">
-
-                 <input id="menu__toggle" type="checkbox">
-                 <label class="menu__btn" for="menu__toggle">
-                     <span></span>
-                 </label>
-
-       <ul class="menu_box"> 
-           <li><a class="menu_item" href="">Services</a></li>
-           <li><a class="menu_item" href="">Product</a></li>
-           <li><a class="menu_item" href="">Technology</a></li>
-           <li><a class="menu_item arr" href="">About</a></li>
-           <li><a class="menu_item arr" href="">Client</a></li>
-           <li><a class="menu_item" href="">Partner</a></li>
-       </ul>
+        <div class="sec4_item2">
+          <h3>Contact</h3>
+          <a href="tel:+622153141135">Phone: +62.21.5314.1135</a>
+          <a href="fax:+622153141135">FAX: +62.21.5314.1135</a>
+          <a href="mailto: community@dwidasa.com"
+            >Email:community@dwidasa.com</a
+          >
         </div>
-
-       <ul class="nav_btn">
-           <li class="nav_btn_1"><a href="#"><img src="./img/Union.svg" alt=""></a></li>
-           <li class="nav_btn_2"><a href="#"><img src="./img/mail.svg" alt=""></a></li>
-           <li class="nav_btn_3"><a href="#"><img src="./img/shuffle.svg" alt=""></a></li>
-       </ul>
-   </header>
-   <main>
-       <div class="section1">
-                <div class="lsi_sec1">
-                    <h1><span>Making the most of the ever-growing</span> Information Technology</h1>
-                    <p class="sec1_p">Managed by a team of professional experts with extensive experience and impressive track records</p>
-                    <a href="" class="sec1_btn">Read More</a>
-                </div>
-                <div class="rsi_sec1"><div class="rsi_sec1_img">
-                    <img src="./img/pana.svg" alt="pana_err">
-                </div></div>
-        </div>
-       <div class="section2">
-           <div class="lsi_sec2"><div class="lsi_sec2_img"><img src="./img/pana2.svg" alt=""></div></div>
-           <div class="rsi_sec2">
-                <h2><span class="rsi_sec2_span">Welcome to</span> Dwidasa Samsara Indonesia (DSI)</h2>
-                <p class="rsi_sec2_p1">Dwidasa Samsara Indonesia (DSI) was firstly established in 2010 by the founders, who each of them has a common end objective to innovate new creations by making the most of the ever-growing information technology through <span>DSI</span>’s distinct front-end based application concept.
-                </p>
-                <p class="rsi_sec2_p2">Managed by a team of professional experts with extensive experience and impressive track records, <span>DSI</span> believes that continuous improvements and innovations assure your business to run effectively and efficiently.</p>
-        </div>
-       </div>
-       <div class="section3">
-           <h3 class="sec3_h3">Product and Service</h3>
-           <div class="sec3_item1">
-                <div class="ico_sec3_1"><img src="./img/sec3_img1.svg" alt="img1"></div>
-                <h3>Our Product</h3>
-                <p>Our product is made on the base of our team’s careful research and analyses, ranging from internet based application.</p>
-                <a class="sec3_a" href="#">Read More</a></div>
-           <div class="sec3_item2">
-            <div class="ico_sec3_2"><img src="./img/sec3_img2.svg" alt="img2"></div>
-            <h3>Our Service</h3>
-            <p>DSI’s shared service solutions focus on the front-end based software development, designed specifically for the banking and financial sectors.</p>
-            <a class="sec3_a" href="#">Read More</a>
-           </div>
-           <div class="sec3_item3">
-            <div class="ico_sec3_3"><img src="./img/sec3_img3.svg" alt="img3"></div>
-            <h3>Our Technology</h3>
-            <p>First JAVA, runs on more than 850 million personal computers worldwide, and on billions of devices worldwide, including mobile and TV devices.</p>
-            <a class="sec3_a" href="#">Read More</a>
-           </div>
-       </div>
-       <div class="section4">
-           <div class="sec4_item1">
-            <div class="logo">
-                <p class="logo_span">
-                    <span class="logo_span_1">D</span>
-                    <span class="logo_span_2">S</span>
-                    <span class="logo_span_3">I</span>
-                </p>
-                <p class="l1">DWIDASA</p>
-                <p class="l2">SAMSARA</p>
-                <p class="l3">INDONESIA</p>
-            </div>
-               <h4>PT Dwidasa Samsara Indonesia</h4>
-               <span>Ruko Jalur Sutera 29A No. 53</span>
-                <span>Alam Sutera Serpong, Tangerang 15323
-                </span></div>
-           <div class="sec4_item2">
-               <h3>Contact</h3>
-               <a href="tel:+622153141135">Phone: +62.21.5314.1135</a>
-                <a href="fax:+622153141135">FAX: +62.21.5314.1135</a>
-                <a href="mailto: community@dwidasa.com">Email:community@dwidasa.com</a>
-            </div>
-       </div>
-   </main>
-   <footer><p>Copyright © 2015 - Dwidasa Samsara Indonesia</p>
-</footer> 
-</body>
+      </div>
+    </main>
+    <footer><p>Copyright © 2015 - Dwidasa Samsara Indonesia</p></footer>
+  </body>
 </html>
-
-
-
