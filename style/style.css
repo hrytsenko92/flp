@@ -348,7 +348,6 @@ footer {
 
 @media screen and (min-width: 450px) and (max-width: 899px) {
   body {
-    max-width: 860px;
     background-color: white;
     font-size: 16px; }
     body header {
@@ -374,22 +373,67 @@ footer {
       max-width: 100%;
       display: grid;
       grid-template-columns: 3em 4fr 3em;
-      grid-template-rows: 2fr 2fr 4fr 2fr;
+      grid-template-rows: 2fr 2fr 2fr 1fr;
       justify-content: center;
       align-content: center; }
       body main .section1 {
         grid-column: 2/3;
-        grid-row: 1/2; }
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr; }
         body main .section1 .rsi_sec1 {
-          display: none; }
+          grid-column: 1/2;
+          grid-row: 1/2;
+          justify-self: center;
+          max-width: 563px; }
+        body main .section1 .lsi_sec1 {
+          grid-column: 1/2;
+          grid-row: 2/3;
+          gap: 1rem; }
+          body main .section1 .lsi_sec1 .sec1_btn {
+            display: inline-block;
+            margin: auto;
+            width: 50%; }
       body main .section2 {
         grid-column: 2/3;
-        grid-row: 2/3; }
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        background-color: white; }
         body main .section2 .lsi_sec2 {
-          display: none; }
+          grid-column: 1/2;
+          grid-row: 1/2;
+          justify-self: center; }
+        body main .section2 .rsi_sec2 {
+          grid-column: 1/2;
+          grid-row: 2/3; }
       body main .section3 {
         grid-column: 2/3;
-        grid-row: 3/4; }
+        grid-row: 3/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 1fr; }
+        body main .section3 .sec3_h3 {
+          grid-column: 1/4;
+          grid-row: 1/2;
+          justify-self: center; }
+        body main .section3 .sec3_item1 {
+          grid-column: 1/2;
+          grid-row: 2/3; }
+          body main .section3 .sec3_item1 .ico_sec3_1 {
+            max-width: 100px; }
+        body main .section3 .sec3_item2 {
+          grid-column: 2/3;
+          grid-row: 2/3; }
+          body main .section3 .sec3_item2 .ico_sec3_2 {
+            max-width: 100px; }
+        body main .section3 .sec3_item3 {
+          grid-column: 3/4;
+          grid-row: 2/3; }
+          body main .section3 .sec3_item3 .ico_sec3_3 {
+            max-width: 100px; }
       body main .section4 {
         grid-column: 2/3;
         grid-row: 4/5; }
