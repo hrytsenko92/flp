@@ -205,7 +205,7 @@ header {
 .section3 {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-  grid-template-rows: minmax(6.25px, 1fr) minmax(31.25rem, 5fr);
+  grid-template-rows: minmax(6.25rem, 1fr) minmax(31.25rem, 4fr);
   gap: 3rem;
   background-color: #FFFFFF; }
   .section3 .sec3_h3 {
