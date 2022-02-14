@@ -236,8 +236,9 @@ display: none;
 .section3 {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-    grid-template-rows: minmax(6.25rem, 1fr) minmax(31.25rem, 4fr);
-    gap: 3rem;
+    /*grid-template-rows: minmax(6.25rem, 1fr) minmax(31.25rem, 4fr);*/
+    grid-template-rows: 1fr 3fr;
+    gap: 2rem;
     background-color: #FFFFFF;
     .sec3_h3 {
         grid-column: 1/6;
@@ -254,7 +255,7 @@ display: none;
         grid-row: 2/3;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr;
+        grid-template-rows: 1fr 0.7fr 1fr 0.4fr;
         .ico_sec3_1 {
             grid-column: 1/2;
             grid-row:1/2;
@@ -277,7 +278,7 @@ display: none;
         .sec3_a {
             grid-column: 1/2;
             grid-row: 4/5;
-            align-self: center;
+            align-self: end;
         }
 
     }
@@ -286,7 +287,7 @@ display: none;
         grid-row: 2/3;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr;
+        grid-template-rows: 1fr 0.7fr 1fr 0.4fr;
         .ico_sec3_2 {
             grid-column: 1/2;
             grid-row:1/2;
@@ -309,7 +310,7 @@ display: none;
         .sec3_a {
             grid-column: 1/2;
             grid-row: 4/5;
-            align-self: center;
+            align-self: end;
         }
     }
     .sec3_item3 {
@@ -317,7 +318,7 @@ display: none;
         grid-row: 2/3;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr;
+        grid-template-rows: 1fr 0.7fr 1fr 0.4fr;
         .ico_sec3_3 {
             grid-column: 1/2;
             grid-row:1/2;
@@ -340,25 +341,25 @@ display: none;
         .sec3_a {
             grid-column: 1/2;
             grid-row: 4/5;
-            align-self: center;
+            align-self: end;
         }
     }
     .sec3_a {
         align-self: start;
         display: block;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 0.7rem;
         font-family: Roboto;
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 29px;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
         background: #EE4248;
         box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
         border-radius: 4px;
         color: #FFFFFF;
-        width: 161px;
-        height: 53px;
+        width: 10rem;
+        height: 3.3rem;
         text-decoration: none;
     }
 }
@@ -434,7 +435,7 @@ footer {
         main {
                 max-width: 100%;
                 display: grid;
-                grid-template-columns: 1fr 4fr 1fr;
+                grid-template-columns: 0.3fr 4fr 0.3fr;
                 grid-template-rows: 1fr 1fr 1fr 1fr;
                 justify-content: center;
                 align-content: center;
@@ -483,12 +484,14 @@ footer {
                 grid-row:3/4;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 0.3fr 1fr;
+                grid-template-rows: 0.5fr 3fr;
+                gap: 1rem;
                 .sec3_h3 {
                     grid-column: 1/4;
                     grid-row: 1/2;
                     justify-self: center;
                 }
+             
                 .sec3_item1 {
                     grid-column: 1/2;
                     grid-row: 2/3;
