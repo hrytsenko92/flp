@@ -188,10 +188,10 @@ display: none;
         //margin-top: 8em;
         box-sizing: border-box;
         }
-        .rsi_sec1_img {
+       /* .rsi_sec1_img {
             background-size: contain;
             max-width: auto;
-        }
+        }*/
     }
 .section2 {
     display: grid;
@@ -451,7 +451,7 @@ footer {
                         grid-column: 1/2;
                         grid-row: 1/2;
                         justify-self: center;
-                        max-width: 563px;
+                        max-width: auto;
                     }
                     .lsi_sec1{
                         grid-column: 1/2;
@@ -513,6 +513,7 @@ footer {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr;
+                gap: 2em;
                 .sec4_item1{
                     grid-column: 1/2;
                     grid-row: 1/2;
@@ -619,6 +620,215 @@ footer {
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 450px) {
-    background-color: red;
+@media screen and (min-width: 320px) and (max-width: 449px) {
+   
+    body {
+        max-width: 449px;
+        font-size: 16px;
+        header {
+            display: grid;
+            grid-template-columns: 3fr 2fr 3fr 0.2fr;
+            grid-template-rows: 70px;
+            align-content: center;
+            justify-content: center;
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+            .hamburger-menu {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                justify-self: center;
+                }
+                .logo {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                justify-self: center;
+                }
+                .nav_btn {
+                grid-column: 3/4;
+                grid-row: 1/2;
+                justify-self: end;
+                }
+        }
+        main {
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: 0.3fr 4fr 0.3fr;
+                grid-template-rows: 1fr 1fr 0.6fr 0.3fr;
+                justify-content: center;
+                align-content: center;
+            .section1{
+                grid-column: 2/3;
+                grid-row:1/2;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1.5fr 1fr;
+                    .rsi_sec1{
+                        grid-column: 1/2;
+                        grid-row: 1/2;
+                        justify-self: center;
+                        max-width: 563px;
+                    }
+                    .lsi_sec1{
+                        grid-column: 1/2;
+                        grid-row: 2/3;
+                        gap: 1rem;
+                        .sec1_btn{
+                            display: inline-block;
+                            margin: auto;
+                            width: 50%;
+                        }
+                    }
+                }
+            .section2{
+                grid-column: 2/3;
+                grid-row:2/3;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 1fr;
+                background-color: white;
+                .lsi_sec2{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                    justify-self: center;
+                }
+                .rsi_sec2{
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+            }
+            .section3{
+                grid-column:2/3;
+                grid-row:3/4;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 0.5fr 1.5fr;
+                gap: 1rem;
+                .sec3_h3 {
+                    grid-column: 1/4;
+                    grid-row: 1/2;
+                    justify-self: center;
+                }
+             
+                .sec3_item1 {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+                .sec3_item2 {
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                }
+                .sec3_item3 {
+                    grid-column: 3/4;
+                    grid-row: 2/3;
+                }
+            }
+            .section4{
+                grid-column:2/3;
+                grid-row:4/5;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 2em;
+                .sec4_item1{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+                .sec4_item2{
+                    grid-column: 2/3;
+                    grid-row:1/2;
+                }
+            }
+       
+    }
+  }
+
+
+    /* скрываем чекбокс */
+    #menu__toggle {
+        opacity: 0;
+      }
+      /* стилизуем кнопку */
+      .menu__btn {
+        display: flex; /* используем flex для центрирования содержимого  sss s*/
+        align-items: center;  /* центрируем содержимое ssss git кнопки */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      /* добавляем "гамбургер" */
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+      }
+      /* элементы меню */
+      .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .menu__item:hover {
+        background-color: #CFD8DC;
+      }
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+      .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      transition-duration: .25s;
+    }
+    .menu__box {
+      transition-duration: .25s;
+    }
+    .menu__item {
+      transition-duration: .25s;
+    }    
 }
