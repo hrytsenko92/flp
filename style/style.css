@@ -320,7 +320,9 @@ header {
 .section4 {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
-  grid-template-rows: minmax(9.37rem, auto); }
+  grid-template-rows: minmax(9.37rem, auto);
+  padding-top: 1rem;
+  gap: 1rem; }
   .section4 .sec4_item1 {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -376,7 +378,7 @@ footer {
       max-width: 100%;
       display: grid;
       grid-template-columns: 0.3fr 4fr 0.3fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 0.6fr 0.3fr;
       justify-content: center;
       align-content: center; }
       body main .section1 {
@@ -417,7 +419,7 @@ footer {
         grid-row: 3/4;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 3fr;
+        grid-template-rows: 0.5fr 1.5fr;
         gap: 1rem; }
         body main .section3 .sec3_h3 {
           grid-column: 1/4;
@@ -426,21 +428,24 @@ footer {
         body main .section3 .sec3_item1 {
           grid-column: 1/2;
           grid-row: 2/3; }
-          body main .section3 .sec3_item1 .ico_sec3_1 {
-            max-width: 100px; }
         body main .section3 .sec3_item2 {
           grid-column: 2/3;
           grid-row: 2/3; }
-          body main .section3 .sec3_item2 .ico_sec3_2 {
-            max-width: 100px; }
         body main .section3 .sec3_item3 {
           grid-column: 3/4;
           grid-row: 2/3; }
-          body main .section3 .sec3_item3 .ico_sec3_3 {
-            max-width: 100px; }
       body main .section4 {
         grid-column: 2/3;
-        grid-row: 4/5; }
+        grid-row: 4/5;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr; }
+        body main .section4 .sec4_item1 {
+          grid-column: 1/2;
+          grid-row: 1/2; }
+        body main .section4 .sec4_item2 {
+          grid-column: 2/3;
+          grid-row: 1/2; }
 
   /* скрываем чекбокс */
   #menu__toggle {
