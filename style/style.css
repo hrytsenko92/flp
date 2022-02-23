@@ -717,15 +717,15 @@ footer {
         grid-column: 2/3;
         grid-row: 4/5;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 2em; }
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem; }
         body main .section4 .sec4_item1 {
           grid-column: 1/2;
           grid-row: 1/2; }
         body main .section4 .sec4_item2 {
-          grid-column: 2/3;
-          grid-row: 1/2; }
+          grid-column: 1/2;
+          grid-row: 2/3; }
 
   /* скрываем чекбокс */
   #menu__toggle {
