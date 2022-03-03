@@ -123,13 +123,13 @@ main {
   grid-column: 2/3;
   grid-row: 1/2;
   display: grid;
-  grid-template-columns: 4fr 0.4fr 4fr;
+  grid-template-columns: 4fr 0.2fr 4fr;
   grid-template-rows: 1fr; }
   .section1 .lsi_sec1 {
     grid-column: 1/2;
     grid-row: 1/2;
     display: grid;
-    grid-template-rows: 1.5fr 0.8fr 1fr;
+    grid-template-rows: 1.3fr 0.5fr 1fr;
     grid-template-columns: 1fr;
     justify-items: start; }
     .section1 .lsi_sec1 h1 {
@@ -172,14 +172,14 @@ main {
     grid-column: 3/4;
     grid-row: 1/2;
     width: 80%;
-    justify-self: stretch;
+    justify-self: center;
     align-self: center; }
 
 .section2 {
   grid-column: 1/4;
   grid-row: 2/3;
   display: grid;
-  grid-template-columns: 4fr 0.5fr 4fr;
+  grid-template-columns: 4fr 0.2fr 4fr;
   grid-template-rows: 1fr;
   background-color: #F6F6F6; }
   .section2 .lsi_sec2 {
@@ -191,13 +191,12 @@ main {
   .section2 .rsi_sec2 {
     grid-column: 3/4;
     grid-row: 1/2;
-    justify-self: center;
+    justify-self: start;
     align-self: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 2fr;
     width: 80%;
-    justify-self: start;
     gap: 1rem; }
     .section2 .rsi_sec2 .rsi_sec2 > h2 {
       font-family: Roboto;
@@ -213,14 +212,15 @@ main {
 .section3 {
   grid-column: 2/3;
   grid-row: 3/4;
+  justify-self: center;
+  width: 93%;
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-  /*grid-template-rows: minmax(6.25rem, 1fr) minmax(31.25rem, 4fr);*/
+  grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1fr 3fr;
   gap: 2rem;
   background-color: #FFFFFF; }
   .section3 .sec3_h3 {
-    grid-column: 1/6;
+    grid-column: 1/4;
     grid-row: 1/2;
     justify-self: center;
     align-self: end;
@@ -229,7 +229,7 @@ main {
     font-weight: 500;
     font-size: 2rem; }
   .section3 .sec3_item1 {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr;
@@ -255,7 +255,7 @@ main {
       grid-row: 4/5;
       align-self: end; }
   .section3 .sec3_item2 {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr;
@@ -281,7 +281,7 @@ main {
       grid-row: 4/5;
       align-self: end; }
   .section3 .sec3_item3 {
-    grid-column: 4/5;
+    grid-column: 3/4;
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr;
@@ -328,12 +328,12 @@ main {
   grid-column: 2/3;
   grid-row: 4/5;
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  grid-template-columns: 4fr 3fr 6fr;
   grid-template-rows: minmax(9.37rem, auto);
-  padding-top: 1rem;
+  padding-top: 2rem;
   gap: 1rem; }
   .section4 .sec4_item1 {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 1/2;
     display: grid;
     grid-template-columns: 1fr;
@@ -341,7 +341,7 @@ main {
     .section4 .sec4_item1 .logo {
       justify-self: start; }
   .section4 .sec4_item2 {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 1/2;
     display: grid;
     grid-template-columns: 1fr;
@@ -355,7 +355,7 @@ main {
 footer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(4rem, 1fr);
+  grid-template-rows: minmax(3rem, 1fr);
   justify-items: center;
   align-items: center;
   background-color: #EE4248; }
@@ -400,7 +400,7 @@ footer {
           grid-column: 1/2;
           grid-row: 1/2;
           justify-self: center;
-          max-width: auto; }
+          max-width: 70%; }
         body main .section1 .lsi_sec1 {
           grid-column: 1/2;
           grid-row: 2/3;
@@ -422,7 +422,8 @@ footer {
           justify-self: center; }
         body main .section2 .rsi_sec2 {
           grid-column: 1/2;
-          grid-row: 2/3; }
+          grid-row: 2/3;
+          justify-self: center; }
       body main .section3 {
         grid-column: 2/3;
         grid-row: 3/4;
